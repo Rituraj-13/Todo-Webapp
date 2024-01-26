@@ -6,10 +6,13 @@
 
 const express = require('express')
 const app = express();
-const {todo} = require("../database");
+const cors = require('cors')
+const {todo} = require("./database");
 const bodyParser = require('body-parser');
 const { createTodo, updateTodo } = require('./types');
+const port = process.env.PORT || 3000;
 app.use(bodyParser.json())
+app.use(cors())
 
 // ! Creating the TODO database
 
@@ -64,4 +67,28 @@ app.put('/completed' , async function(req, res){
     })
 
 })
-app.listen(3000)
+
+app.delete('/deleteTodoAtIndex/:index', async function(req, res) {
+    const index = parseInt(req.params.index, 10);
+    // Fetch all todos
+    const todos = await todo.find({});
+
+    // Check if index is valid
+    if (index < 0 || index >= todos.length) {
+        res.status(400).json({
+            message: "Invalid index."
+        });
+        return;
+    }
+
+    // Get the todo at the specified index
+    const todoAtIndex = todos[index];
+
+    // Delete the todo
+    await todo.deleteOne({ _id: todoAtIndex._id });
+
+    res.json({
+        message: 'Todo deleted successfully'
+    });
+});
+app.listen(port)
