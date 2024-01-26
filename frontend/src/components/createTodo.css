@@ -1,0 +1,56 @@
+#task_desc{
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+    color: #000080;
+}
+
+#task_title{
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+    color: #000080;
+}
+
+#add_button{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    background-color: #f0fff0;
+    color: #006400;
+}
+#add_button:hover {
+    background-color: #00008b; /* DarkBlue */
+    color: #ffffff; /* White */
+    transition: background-color 0.3s ease;
+}
+
+#task_input{
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    color: #800000;
+}
+
+#desc_input{
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    color: #800000;
+}
+
+.outerDiv {
+    /* background-color: #ffffff */
+    border-radius: 4%;
+    background-color: rgba(255, 255, 255, 0.7); /* White background with 50% opacity */
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+}

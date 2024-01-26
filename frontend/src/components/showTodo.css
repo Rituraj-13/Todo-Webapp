@@ -1,0 +1,40 @@
+#task_no {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+    color: #3e3384f9
+}
+
+#title {
+/*     font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: x-large;
+    color: #824010;
+}
+
+#desc {
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+    color: #294747;
+
+}
+
+#list_of_todo{
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: larger;
+    color: #000080;
+    background-color: #FFF0F5;
+
+}
